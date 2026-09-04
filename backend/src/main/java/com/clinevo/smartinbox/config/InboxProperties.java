@@ -10,6 +10,7 @@ public class InboxProperties {
 	private String testdataDir = "../testdata";
 	private String reviewerUser = "reviewer";
 	private String reviewerPassword = "reviewer123";
+	private String corsOrigins = "http://localhost:4200,http://127.0.0.1:4200,http://localhost";
 	private final Imap imap = new Imap();
 
 	public String getAiServiceUrl() {
@@ -52,6 +53,14 @@ public class InboxProperties {
 		this.reviewerPassword = reviewerPassword;
 	}
 
+	public String getCorsOrigins() {
+		return corsOrigins;
+	}
+
+	public void setCorsOrigins(String corsOrigins) {
+		this.corsOrigins = corsOrigins;
+	}
+
 	public Imap getImap() {
 		return imap;
 	}
@@ -63,6 +72,7 @@ public class InboxProperties {
 		private String user = "";
 		private String password = "";
 		private long pollMs = 30000;
+		private int maxPerPoll = 5;
 
 		public boolean isEnabled() {
 			return enabled;
@@ -110,6 +120,14 @@ public class InboxProperties {
 
 		public void setPollMs(long pollMs) {
 			this.pollMs = pollMs;
+		}
+
+		public int getMaxPerPoll() {
+			return maxPerPoll;
+		}
+
+		public void setMaxPerPoll(int maxPerPoll) {
+			this.maxPerPoll = maxPerPoll;
 		}
 	}
 }

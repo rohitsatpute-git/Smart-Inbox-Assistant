@@ -57,7 +57,13 @@ public class ImapPoller {
 				inbox.open(Folder.READ_WRITE);
 				Message[] messages = inbox.search(new FlagTerm(new Flags(Flags.Flag.SEEN), false));
 				log.info("IMAP unseen count={}", messages.length);
-				for (Message message : messages) {
+				int limit = Math.max(0, imap.getMaxPerPoll());
+				int n = Math.min(messages.length, limit);
+				if (messages.length > n) {
+					log.info("IMAP ingesting {} of {} unseen this cycle", n, messages.length);
+				}
+				for (int i = 0; i < n; i++) {
+					Message message = messages[i];
 					try {
 						ingestOne(message);
 						message.setFlag(Flags.Flag.SEEN, true);

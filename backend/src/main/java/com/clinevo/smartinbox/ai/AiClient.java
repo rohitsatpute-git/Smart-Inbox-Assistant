@@ -1,5 +1,6 @@
 package com.clinevo.smartinbox.ai;
 
+import java.net.http.HttpClient;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
@@ -22,7 +23,11 @@ public class AiClient {
 
 	public AiClient(InboxProperties properties, ObjectMapper mapper) {
 		this.mapper = mapper;
-		JdkClientHttpRequestFactory factory = new JdkClientHttpRequestFactory();
+		HttpClient httpClient = HttpClient.newBuilder()
+				.version(HttpClient.Version.HTTP_1_1)
+				.connectTimeout(Duration.ofSeconds(30))
+				.build();
+		JdkClientHttpRequestFactory factory = new JdkClientHttpRequestFactory(httpClient);
 		factory.setReadTimeout(Duration.ofMinutes(6));
 		this.restClient = RestClient.builder()
 				.baseUrl(properties.getAiServiceUrl())
@@ -39,16 +44,16 @@ public class AiClient {
 		payload.put("body", body);
 		payload.put("received_at", receivedAt);
 		payload.put("attachments", attachments);
-		String json = restClient.post()
-				.uri("/v1/analyze")
-				.contentType(MediaType.APPLICATION_JSON)
-				.body(payload)
-				.retrieve()
-				.body(String.class);
 		try {
+			String json = restClient.post()
+					.uri("/v1/analyze")
+					.contentType(MediaType.APPLICATION_JSON)
+					.body(mapper.writeValueAsString(payload))
+					.retrieve()
+					.body(String.class);
 			return mapper.readTree(json);
 		} catch (Exception e) {
-			throw new IllegalStateException("AI service returned invalid JSON", e);
+			throw new IllegalStateException("AI service call failed", e);
 		}
 	}
 }

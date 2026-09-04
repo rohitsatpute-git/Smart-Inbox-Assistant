@@ -34,7 +34,13 @@ def heuristic_classify(subject: str, body: str, pdf_text: str) -> list[Classific
 
 def _grab(pattern: str, text: str) -> str:
     m = re.search(pattern, text, re.I)
-    return m.group(1).strip() if m else "Not stated"
+    if not m:
+        return "Not stated"
+    raw = m.group(1) if m.lastindex else m.group(0)
+    if raw is None:
+        return "Not stated"
+    val = raw.strip()
+    return val if val else "Not stated"
 
 
 def heuristic_fields(subject: str, body: str, pdf_text: str, labels: list[str]) -> list[FieldOut]:

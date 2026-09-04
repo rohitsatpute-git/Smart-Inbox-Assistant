@@ -93,6 +93,16 @@ public class InboxRepository {
 				error, jobId);
 	}
 
+	public int requeueFailedJobs() {
+		int jobs = jdbc.update("""
+				UPDATE processing_job
+				SET status = 'PENDING', error_text = NULL, started_at = NULL, finished_at = NULL, duration_ms = NULL
+				WHERE status = 'FAILED'
+				""");
+		jdbc.update("UPDATE inbox_message SET status = 'PENDING' WHERE status = 'FAILED'");
+		return jobs;
+	}
+
 	public Map<String, Object> getMessage(long id) {
 		return jdbc.queryForMap("SELECT * FROM inbox_message WHERE id = ?", id);
 	}

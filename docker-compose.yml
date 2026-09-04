@@ -20,5 +20,84 @@ services:
       retries: 20
       start_period: 40s
 
+  testdata:
+    build:
+      context: .
+      dockerfile: scripts/Dockerfile
+    container_name: smart-inbox-testdata
+    volumes:
+      - ./testdata:/work/testdata
+
+  ai-service:
+    build:
+      context: ./ai-service
+      dockerfile: Dockerfile
+    container_name: smart-inbox-ai
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.0-flash}
+    volumes:
+      - attachments:/data/attachments:ro
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: smart-inbox-backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      ORACLE_URL: jdbc:oracle:thin:@oracle:1521/FREEPDB1
+      ORACLE_USER: ${ORACLE_USER:-smartinbox}
+      ORACLE_PASSWORD: ${ORACLE_PASSWORD:-smartinbox}
+      AI_SERVICE_URL: http://ai-service:8000
+      ATTACHMENT_DIR: /data/attachments
+      TESTDATA_DIR: /testdata
+      REVIEWER_USER: ${REVIEWER_USER:-reviewer}
+      REVIEWER_PASSWORD: ${REVIEWER_PASSWORD:-reviewer123}
+      GMAIL_USER: "${GMAIL_USER:-}"
+      GMAIL_APP_PASSWORD: "${GMAIL_APP_PASSWORD:-}"
+      IMAP_HOST: "${IMAP_HOST:-imap.gmail.com}"
+      IMAP_PORT: "${IMAP_PORT:-993}"
+      IMAP_POLL_MS: "${IMAP_POLL_MS:-30000}"
+      IMAP_MAX_PER_POLL: "${IMAP_MAX_PER_POLL:-5}"
+      IMAP_ENABLED: "${IMAP_ENABLED:-true}"
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:4200,http://127.0.0.1:4200,http://localhost}
+    volumes:
+      - attachments:/data/attachments
+      - ./testdata:/testdata:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      oracle:
+        condition: service_healthy
+      ai-service:
+        condition: service_healthy
+      testdata:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: smart-inbox-frontend
+    volumes:
+      - ./frontend/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      - "4200:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
 volumes:
   oracle-data:
+  attachments:
