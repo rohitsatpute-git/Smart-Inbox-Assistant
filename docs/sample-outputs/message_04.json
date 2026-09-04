@@ -1,0 +1,264 @@
+{
+  "message_id": 4,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    },
+    {
+      "category": "PQC",
+      "confidence": 0.64,
+      "reason": "Heuristic: product-quality defect language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "patient",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "patient"
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "Quality Complaint Form",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Quality Complaint Form"
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "described. Packaging integrity only.",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "described. Packaging integrity only."
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "Quality complaint only. Zentaril 10 mg lot ZT-9B17: broken tamper-evident seal and wrong color (brown) tablets. Photo of blister mentioned. No patient reaction.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Quality",
+      "name": "product",
+      "value": "Quality Complaint Form (FICTIONAL)",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Quality",
+      "name": "batch_lot",
+      "value": "ZT-9B17",
+      "confidence": 0.6,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Quality",
+      "name": "defect",
+      "value": "Broken seal",
+      "confidence": 0.6,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Quality",
+      "name": "photo_mentioned",
+      "value": "yes",
+      "confidence": 0.7,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [
+    {
+      "attachment_id": 1,
+      "flavor": "digital",
+      "language": "en",
+      "original_excerpt": "Product Quality Complaint Form (FICTIONAL)\nField\nValue\nProduct\nZentaril 10 mg\nBatch / Lot\nZT-9B17\nDefect\nBroken tamper-evident seal and brown discoloration of tablets\nPhoto\nYes \u2014 blister photo attached in email\nNo adverse reaction described. Packaging integrity only.\n",
+      "english_text": "Product Quality Complaint Form (FICTIONAL)\nField\nValue\nProduct\nZentaril 10 mg\nBatch / Lot\nZT-9B17\nDefect\nBroken tamper-evident seal and brown discoloration of tablets\nPhoto\nYes \u2014 blister photo attached in email\nNo adverse reaction described. Packaging integrity only.\n",
+      "summary_text": "Product Quality Complaint Form (FICTIONAL)\nField\nValue\nProduct\nZentaril 10 mg\nBatch / Lot\nZT-9B17\nDefect\nBroken tamper-evident seal and brown discoloration of tablets\nPhoto\nYes \u2014 blister photo attached in email\nNo adverse reaction described. Packaging integrity only.",
+      "relevance_note": "Heuristic flavor=digital; set GEMINI_API_KEY for a 10\u201315 sentence reviewer summary.",
+      "ocr_confidence": null,
+      "duration_ms": 140,
+      "tables": [
+        {
+          "page_no": 1,
+          "table_json": {
+            "headers": [
+              "Field",
+              "Value"
+            ],
+            "rows": [
+              {
+                "Field": "Product",
+                "Value": "Zentaril 10 mg"
+              },
+              {
+                "Field": "Batch / Lot",
+                "Value": "ZT-9B17"
+              },
+              {
+                "Field": "Defect",
+                "Value": "Broken tamper-evident seal and brown discoloration of tablets"
+              },
+              {
+                "Field": "Photo",
+                "Value": "Yes \u2014 blister photo attached in email"
+              }
+            ]
+          }
+        }
+      ],
+      "images": []
+    }
+  ],
+  "duration_ms": 147,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 151
+}

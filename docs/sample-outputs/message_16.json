@@ -1,0 +1,177 @@
+{
+  "message_id": 16,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "patient",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "patient"
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "Relorix",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Relorix"
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "occurred.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "occurred."
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "Does Zentaril interact with fictional drug Relorix? How should a patient take it with food? No reaction occurred.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [],
+  "duration_ms": 1,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 1
+}

@@ -1,0 +1,219 @@
+{
+  "message_id": 3,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "form (FICTIONAL)",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "form (FICTIONAL)"
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "Pharmacist",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Pharmacist"
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "not stated",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "not stated"
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "name missing",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "name missing"
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "\u2014 drug name missing",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "\u2014 drug name missing"
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "Severe headache after first dose of unnamed trial drug",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Severe headache after first dose of unnamed trial drug"
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "Pharmacist reporting severe headache after first dose. Patient adult, age not written. Product name missing on the form.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [
+    {
+      "attachment_id": 1,
+      "flavor": "digital",
+      "language": "en",
+      "original_excerpt": "Incomplete reporter form (FICTIONAL)\nField\nValue\nPatient\nAdult, age not written\nProduct\nNot stated\nReaction\nSevere headache after first dose of unnamed trial drug\nReporter\nPharmacist, country not stated\n",
+      "english_text": "Incomplete reporter form (FICTIONAL)\nField\nValue\nPatient\nAdult, age not written\nProduct\nNot stated\nReaction\nSevere headache after first dose of unnamed trial drug\nReporter\nPharmacist, country not stated\n",
+      "summary_text": "Incomplete reporter form (FICTIONAL)\nField\nValue\nPatient\nAdult, age not written\nProduct\nNot stated\nReaction\nSevere headache after first dose of unnamed trial drug\nReporter\nPharmacist, country not stated",
+      "relevance_note": "Heuristic flavor=digital; set GEMINI_API_KEY for a 10\u201315 sentence reviewer summary.",
+      "ocr_confidence": null,
+      "duration_ms": 85,
+      "tables": [
+        {
+          "page_no": 1,
+          "table_json": {
+            "headers": [
+              "Field",
+              "Value"
+            ],
+            "rows": [
+              {
+                "Field": "Patient",
+                "Value": "Adult, age not written"
+              },
+              {
+                "Field": "Product",
+                "Value": "Not stated"
+              },
+              {
+                "Field": "Reaction",
+                "Value": "Severe headache after first dose of unnamed trial drug"
+              },
+              {
+                "Field": "Reporter",
+                "Value": "Pharmacist, country not stated"
+              }
+            ]
+          }
+        }
+      ],
+      "images": []
+    }
+  ],
+  "duration_ms": 86,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 86
+}

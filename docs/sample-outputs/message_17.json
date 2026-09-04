@@ -1,0 +1,37 @@
+{
+  "message_id": 17,
+  "classifications": [
+    {
+      "category": "MI",
+      "confidence": 0.6,
+      "reason": "Heuristic: question/dosing language without AE or defect"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Inquiry",
+      "name": "questions",
+      "value": "Dosing in hepatic impairment?",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Inquiry",
+      "name": "product_topic",
+      "value": "Not stated",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [],
+  "duration_ms": 0,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 0
+}

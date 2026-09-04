@@ -1,0 +1,191 @@
+{
+  "message_id": 13,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "Adjunto un PDF en espanol sobre urticaria ficticia por Zentaril.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [
+    {
+      "attachment_id": 1,
+      "flavor": "article",
+      "language": "es",
+      "original_excerpt": "Informe ficticio: urticaria por Zentaril\nFictional journal \u2014 synthetic case for software testing. DOI: 10.0000/fake.case\nAbstract\nUna mujer ficticia de 45 anos presento urticaria y edema palpebral dos dias despues de Zentaril\n10 mg. No se hospitalizo. Reportero: medico en Espana.\nCase report\nUna mujer ficticia de 45 anos presento urticaria\ny edema palpebral dos dias despues de Zentaril\n10 mg. No se hospitalizo. Reportero: medico en\nEspana. Disusion general sobre histamina. Datos\nsintetico solamente.\n\nReferences (ignore for case extraction)\n1. Smith J. Made-up review of widget tablets. Fake J Med. 2019;1:1-9.\n2. Doe A. Unrelated mechanism paper. Imaginary Pharmacol. 2020;2:10-20.\n3. Lee B. General discussion of nausea. Placeholder Clin. 2021;3:30-40.\nLanguage tag: es. All patients are fictional.\n",
+      "english_text": "Informe ficticio: urticaria por Zentaril\nFictional journal \u2014 synthetic case for software testing. DOI: 10.0000/fake.case\nAbstract\nUna mujer ficticia de 45 anos presento urticaria y edema palpebral dos dias despues de Zentaril\n10 mg. No se hospitalizo. Reportero: medico en Espana.\nCase report\nUna mujer ficticia de 45 anos presento urticaria\ny edema palpebral dos dias despues de Zentaril\n10 mg. No se hospitalizo. Reportero: medico en\nEspana. Disusion general sobre histamina. Datos\nsintetico solamente.\n\nReferences (ignore for case extraction)\n1. Smith J. Made-up review of widget tablets. Fake J Med. 2019;1:1-9.\n2. Doe A. Unrelated mechanism paper. Imaginary Pharmacol. 2020;2:10-20.\n3. Lee B. General discussion of nausea. Placeholder Clin. 2021;3:30-40.\nLanguage tag: es. All patients are fictional.\n",
+      "summary_text": "Informe ficticio: urticaria por Zentaril\nFictional journal \u2014 synthetic case for software testing. DOI: 10.0000/fake.case\nAbstract\nUna mujer ficticia de 45 anos presento urticaria y edema palpebral dos dias despues de Zentaril\n10 mg. No se hospitalizo. Reportero: medico en Espana.\nCase report\nUna mujer ficticia de 45 anos presento urticaria\ny edema palpebral dos dias despues de Zentaril\n10 mg. No se hospitalizo. Reportero: medico en\nEspana. Disusion general sobre histamina. Datos\nsintetico solamente.\n\nReferences (ignore for case extraction)\n1. Smith J. Made-up review of widget tablets. Fake J Med. 2019;1:1-9.\n2. Doe A. Unrelated mechanism paper. Imaginary Pharmacol. 2020;2:10-20.\n3. Lee B. General discussion of nausea. Placeholder Clin. 2021;3:30-40.\nLanguage tag: es. All patients are fictional.",
+      "relevance_note": "Heuristic flavor=article; set GEMINI_API_KEY for a 10\u201315 sentence reviewer summary.",
+      "ocr_confidence": null,
+      "duration_ms": 171,
+      "tables": [],
+      "images": []
+    }
+  ],
+  "duration_ms": 174,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 174
+}

@@ -1,0 +1,24 @@
+services:
+  oracle:
+    image: gvenzl/oracle-free:23.7-slim-faststart
+    container_name: smart-inbox-oracle
+    environment:
+      ORACLE_PASSWORD: smartinbox
+      APP_USER: smartinbox
+      APP_USER_PASSWORD: smartinbox
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+      - ./db/00-schema-sys.sql:/container-entrypoint-initdb.d/00-schema-sys.sql:ro
+      - ./db/01-init.sh:/container-entrypoint-initdb.d/01-init.sh:ro
+      - ./db/schema.sql:/opt/smart-inbox/schema.sql:ro
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 40s
+
+volumes:
+  oracle-data:

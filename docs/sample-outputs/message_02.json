@@ -1,0 +1,227 @@
+{
+  "message_id": 2,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "41",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "41"
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "man",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "man"
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "is ER physician, country not stated.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "is ER physician, country not stated."
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "physician",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "physician"
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "not stated",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "not stated"
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "Helioxa inhalation",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Helioxa inhalation"
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "Wheezing and ER visit",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Wheezing and ER visit"
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "not known yet. Reporter is ER physician, country not stated.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "not known yet. Reporter is ER physician, country not stated."
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "41-year-old man, Helioxa inhalation, wheezing, ER visit. Outcome not known yet. Reporter is ER physician, country not stated.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [
+    {
+      "attachment_id": 1,
+      "flavor": "digital",
+      "language": "en",
+      "original_excerpt": "Follow-up AE Form (FICTIONAL)\nField\nValue\nPatient age\n41\nSex\nMale\nProduct\nHelioxa inhalation\nReaction\nWheezing and ER visit\nOutcome\nNot stated\nLot\nHX-4411\n",
+      "english_text": "Follow-up AE Form (FICTIONAL)\nField\nValue\nPatient age\n41\nSex\nMale\nProduct\nHelioxa inhalation\nReaction\nWheezing and ER visit\nOutcome\nNot stated\nLot\nHX-4411\n",
+      "summary_text": "Follow-up AE Form (FICTIONAL)\nField\nValue\nPatient age\n41\nSex\nMale\nProduct\nHelioxa inhalation\nReaction\nWheezing and ER visit\nOutcome\nNot stated\nLot\nHX-4411",
+      "relevance_note": "Heuristic flavor=digital; set GEMINI_API_KEY for a 10\u201315 sentence reviewer summary.",
+      "ocr_confidence": null,
+      "duration_ms": 112,
+      "tables": [
+        {
+          "page_no": 1,
+          "table_json": {
+            "headers": [
+              "Field",
+              "Value"
+            ],
+            "rows": [
+              {
+                "Field": "Patient age",
+                "Value": "41"
+              },
+              {
+                "Field": "Sex",
+                "Value": "Male"
+              },
+              {
+                "Field": "Product",
+                "Value": "Helioxa inhalation"
+              },
+              {
+                "Field": "Reaction",
+                "Value": "Wheezing and ER visit"
+              },
+              {
+                "Field": "Outcome",
+                "Value": "Not stated"
+              },
+              {
+                "Field": "Lot",
+                "Value": "HX-4411"
+              }
+            ]
+          }
+        }
+      ],
+      "images": []
+    }
+  ],
+  "duration_ms": 113,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 113
+}

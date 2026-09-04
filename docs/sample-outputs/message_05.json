@@ -1,0 +1,219 @@
+{
+  "message_id": 5,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "defect",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "defect"
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "adjustment if eGFR 40?",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "adjustment if eGFR 40?"
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "Two questions: Can Zentaril be crushed into applesauce? Any renal adjustment at eGFR 40? No adverse event, no product defect.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [
+    {
+      "attachment_id": 1,
+      "flavor": "digital",
+      "language": "en",
+      "original_excerpt": "Medical Information Request Log (FICTIONAL)\nField\nValue\nProduct\nZentaril\nQuestion 1\nCan it be crushed and mixed with applesauce?\nQuestion 2\nRenal dose adjustment if eGFR 40?\nAE present\nNo\n",
+      "english_text": "Medical Information Request Log (FICTIONAL)\nField\nValue\nProduct\nZentaril\nQuestion 1\nCan it be crushed and mixed with applesauce?\nQuestion 2\nRenal dose adjustment if eGFR 40?\nAE present\nNo\n",
+      "summary_text": "Medical Information Request Log (FICTIONAL)\nField\nValue\nProduct\nZentaril\nQuestion 1\nCan it be crushed and mixed with applesauce?\nQuestion 2\nRenal dose adjustment if eGFR 40?\nAE present\nNo",
+      "relevance_note": "Heuristic flavor=digital; set GEMINI_API_KEY for a 10\u201315 sentence reviewer summary.",
+      "ocr_confidence": null,
+      "duration_ms": 112,
+      "tables": [
+        {
+          "page_no": 1,
+          "table_json": {
+            "headers": [
+              "Field",
+              "Value"
+            ],
+            "rows": [
+              {
+                "Field": "Product",
+                "Value": "Zentaril"
+              },
+              {
+                "Field": "Question 1",
+                "Value": "Can it be crushed and mixed with applesauce?"
+              },
+              {
+                "Field": "Question 2",
+                "Value": "Renal dose adjustment if eGFR 40?"
+              },
+              {
+                "Field": "AE present",
+                "Value": "No"
+              }
+            ]
+          }
+        }
+      ],
+      "images": []
+    }
+  ],
+  "duration_ms": 114,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 114
+}

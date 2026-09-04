@@ -1,0 +1,247 @@
+{
+  "message_id": 1,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "67",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "67"
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "woman",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "woman"
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "72 kg",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "72 kg"
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Hypertension (fictional)",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Hypertension (fictional)"
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "Dr. Priya Nair, physician, India",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Dr. Priya Nair, physician, India"
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "patient",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "patient"
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "Zentaril 10 mg tablet",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Zentaril 10 mg tablet"
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "/ route",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "/ route"
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "10 mg oral daily",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "10 mg oral daily"
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "4 Jan, reaction day 3, recovered after stopping. Weight 72 kg, hypertension history. Fictional case only.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "4 Jan, reaction day 3, recovered after stopping. Weight 72 kg, hypertension history. Fictional case only."
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "day 3, recovered after stopping. Weight 72 kg, hypertension history. Fictional case only.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "day 3, recovered after stopping. Weight 72 kg, hypertension history. Fictional case only."
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "4 Jan, reaction day 3, recovered after stopping. Weight 72 kg, hypertension history. Fictional case only.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "4 Jan, reaction day 3, recovered after stopping. Weight 72 kg, hypertension history. Fictional case only."
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "Recovered after drug stopped",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Recovered after drug stopped"
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Serious",
+      "confidence": 0.55,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Serious"
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "Hello PV team. I am Dr. Priya Nair (physician, India). A 67-year-old woman developed generalized urticaria after Zentaril 10 mg oral. Started 4 Jan, reaction day 3, recovered after stopping. Weight 72 kg, hypertension history. Fictional case only.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [
+    {
+      "attachment_id": 1,
+      "flavor": "digital",
+      "language": "en",
+      "original_excerpt": "CIOMS-like Safety Report (FICTIONAL)\nField\nValue\nPatient age\n67\nSex\nFemale\nWeight\n72 kg\nHistory\nHypertension (fictional)\nReporter\nDr. Priya Nair, physician, India\nProduct\nZentaril 10 mg tablet\nDose / route\n10 mg oral daily\nStart / stop\n2025-01-04 / 2025-01-12\nReaction\nGeneralized urticaria starting day 3\nOutcome\nRecovered after drug stopped\nSerious\nNo \u2014 not hospitalized\nNarrative: Fictional patient developed hives three days after starting Zentaril. No real person.\n",
+      "english_text": "CIOMS-like Safety Report (FICTIONAL)\nField\nValue\nPatient age\n67\nSex\nFemale\nWeight\n72 kg\nHistory\nHypertension (fictional)\nReporter\nDr. Priya Nair, physician, India\nProduct\nZentaril 10 mg tablet\nDose / route\n10 mg oral daily\nStart / stop\n2025-01-04 / 2025-01-12\nReaction\nGeneralized urticaria starting day 3\nOutcome\nRecovered after drug stopped\nSerious\nNo \u2014 not hospitalized\nNarrative: Fictional patient developed hives three days after starting Zentaril. No real person.\n",
+      "summary_text": "CIOMS-like Safety Report (FICTIONAL)\nField\nValue\nPatient age\n67\nSex\nFemale\nWeight\n72 kg\nHistory\nHypertension (fictional)\nReporter\nDr. Priya Nair, physician, India\nProduct\nZentaril 10 mg tablet\nDose / route\n10 mg oral daily\nStart / stop\n2025-01-04 / 2025-01-12\nReaction\nGeneralized urticaria starting day 3\nOutcome\nRecovered after drug stopped\nSerious\nNo \u2014 not hospitalized\nNarrative: Fictional patient developed hives three days after starting Zentaril. No real person.",
+      "relevance_note": "Heuristic flavor=digital; set GEMINI_API_KEY for a 10\u201315 sentence reviewer summary.",
+      "ocr_confidence": null,
+      "duration_ms": 2583,
+      "tables": [
+        {
+          "page_no": 1,
+          "table_json": {
+            "headers": [
+              "Field",
+              "Value"
+            ],
+            "rows": [
+              {
+                "Field": "Patient age",
+                "Value": "67"
+              },
+              {
+                "Field": "Sex",
+                "Value": "Female"
+              },
+              {
+                "Field": "Weight",
+                "Value": "72 kg"
+              },
+              {
+                "Field": "History",
+                "Value": "Hypertension (fictional)"
+              },
+              {
+                "Field": "Reporter",
+                "Value": "Dr. Priya Nair, physician, India"
+              },
+              {
+                "Field": "Product",
+                "Value": "Zentaril 10 mg tablet"
+              },
+              {
+                "Field": "Dose / route",
+                "Value": "10 mg oral daily"
+              },
+              {
+                "Field": "Start / stop",
+                "Value": "2025-01-04 / 2025-01-12"
+              },
+              {
+                "Field": "Reaction",
+                "Value": "Generalized urticaria starting day 3"
+              },
+              {
+                "Field": "Outcome",
+                "Value": "Recovered after drug stopped"
+              },
+              {
+                "Field": "Serious",
+                "Value": "No \u2014 not hospitalized"
+              }
+            ]
+          }
+        }
+      ],
+      "images": []
+    }
+  ],
+  "duration_ms": 2595,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 2595
+}

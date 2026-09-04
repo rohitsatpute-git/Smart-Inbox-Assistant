@@ -1,0 +1,177 @@
+{
+  "message_id": 19,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "male",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "male"
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "GP, Canada. Started 1 Feb, reaction GI bleed 8 Feb. Outcome death. This is synthetic.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "GP, Canada. Started 1 Feb, reaction GI bleed 8 Feb. Outcome death. This is synthetic."
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "1 Feb, reaction GI bleed 8 Feb. Outcome death. This is synthetic.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "1 Feb, reaction GI bleed 8 Feb. Outcome death. This is synthetic."
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "GI bleed 8 Feb. Outcome death. This is synthetic.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "GI bleed 8 Feb. Outcome death. This is synthetic."
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "1 Feb, reaction GI bleed 8 Feb. Outcome death. This is synthetic.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "1 Feb, reaction GI bleed 8 Feb. Outcome death. This is synthetic."
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "death. This is synthetic.",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "death. This is synthetic."
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Death",
+      "confidence": 0.55,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": "Death"
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "Fictional 81-year-old male died in hospital after Zentaril. Reporter GP, Canada. Started 1 Feb, reaction GI bleed 8 Feb. Outcome death. This is synthetic.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [],
+  "duration_ms": 1,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 1
+}

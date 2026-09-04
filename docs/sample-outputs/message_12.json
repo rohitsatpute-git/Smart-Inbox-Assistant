@@ -1,0 +1,191 @@
+{
+  "message_id": 12,
+  "classifications": [
+    {
+      "category": "ICSR",
+      "confidence": 0.62,
+      "reason": "Heuristic: adverse-event language present"
+    }
+  ],
+  "fields": [
+    {
+      "group": "Patient",
+      "name": "age",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "sex",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "weight_height",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Patient",
+      "name": "history",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "who",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "role",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reporter",
+      "name": "country",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "name",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "dose",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "route",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Product",
+      "name": "start_stop",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "what",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "onset",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Reaction",
+      "name": "outcome",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Severity",
+      "name": "serious",
+      "value": "Not stated",
+      "confidence": 0.9,
+      "source_type": "pdf",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    },
+    {
+      "group": "Narrative",
+      "name": "case_summary",
+      "value": "Fictional anaphylaxis write-up.",
+      "confidence": 0.5,
+      "source_type": "email",
+      "attachment_id": null,
+      "page_no": null,
+      "quote_snippet": null
+    }
+  ],
+  "pdf_analyses": [
+    {
+      "attachment_id": 1,
+      "flavor": "article",
+      "language": "en",
+      "original_excerpt": "Fictional anaphylaxis to Helioxa\nFictional journal \u2014 synthetic case for software testing. DOI: 10.0000/fake.case\nAbstract\nEmergency department of a fictional hospital: 22-year-old received Helioxa and developed\nanaphylaxis, epinephrine given, recovered.\nCase report\nEmergency department of a fictional hospital:\n22-year-old received Helioxa and developed\nanaphylaxis, epinephrine given, recovered.\nIgnore the methods section about device\nengineering.\n\nReferences (ignore for case extraction)\n1. Smith J. Made-up review of widget tablets. Fake J Med. 2019;1:1-9.\n2. Doe A. Unrelated mechanism paper. Imaginary Pharmacol. 2020;2:10-20.\n3. Lee B. General discussion of nausea. Placeholder Clin. 2021;3:30-40.\nLanguage tag: en. All patients are fictional.\n",
+      "english_text": "Fictional anaphylaxis to Helioxa\nFictional journal \u2014 synthetic case for software testing. DOI: 10.0000/fake.case\nAbstract\nEmergency department of a fictional hospital: 22-year-old received Helioxa and developed\nanaphylaxis, epinephrine given, recovered.\nCase report\nEmergency department of a fictional hospital:\n22-year-old received Helioxa and developed\nanaphylaxis, epinephrine given, recovered.\nIgnore the methods section about device\nengineering.\n\nReferences (ignore for case extraction)\n1. Smith J. Made-up review of widget tablets. Fake J Med. 2019;1:1-9.\n2. Doe A. Unrelated mechanism paper. Imaginary Pharmacol. 2020;2:10-20.\n3. Lee B. General discussion of nausea. Placeholder Clin. 2021;3:30-40.\nLanguage tag: en. All patients are fictional.\n",
+      "summary_text": "Fictional anaphylaxis to Helioxa\nFictional journal \u2014 synthetic case for software testing. DOI: 10.0000/fake.case\nAbstract\nEmergency department of a fictional hospital: 22-year-old received Helioxa and developed\nanaphylaxis, epinephrine given, recovered.\nCase report\nEmergency department of a fictional hospital:\n22-year-old received Helioxa and developed\nanaphylaxis, epinephrine given, recovered.\nIgnore the methods section about device\nengineering.\n\nReferences (ignore for case extraction)\n1. Smith J. Made-up review of widget tablets. Fake J Med. 2019;1:1-9.\n2. Doe A. Unrelated mechanism paper. Imaginary Pharmacol. 2020;2:10-20.\n3. Lee B. General discussion of nausea. Placeholder Clin. 2021;3:30-40.\nLanguage tag: en. All patients are fictional.",
+      "relevance_note": "Heuristic flavor=article; set GEMINI_API_KEY for a 10\u201315 sentence reviewer summary.",
+      "ocr_confidence": null,
+      "duration_ms": 153,
+      "tables": [],
+      "images": []
+    }
+  ],
+  "duration_ms": 155,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 156
+}

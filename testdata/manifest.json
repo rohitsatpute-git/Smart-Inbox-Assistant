@@ -1,0 +1,153 @@
+{
+  "disclaimer": "All content is synthetic. No real patient data.",
+  "messages": [
+    {
+      "sender": "dr.nair@example.clinic",
+      "subject": "Possible Zentaril rash \u2014 fictional patient",
+      "body": "Hello PV team. I am Dr. Priya Nair (physician, India). A 67-year-old woman developed generalized urticaria after Zentaril 10 mg oral. Started 4 Jan, reaction day 3, recovered after stopping. Weight 72 kg, hypertension history. Fictional case only.",
+      "pdfRelativePaths": [
+        "pdfs/digital_icsr_01.pdf"
+      ]
+    },
+    {
+      "sender": "er.night@example.hospital",
+      "subject": "Helioxa wheeze, incomplete follow-up",
+      "body": "41-year-old man, Helioxa inhalation, wheezing, ER visit. Outcome not known yet. Reporter is ER physician, country not stated.",
+      "pdfRelativePaths": [
+        "pdfs/digital_icsr_02.pdf"
+      ]
+    },
+    {
+      "sender": "pharmacy@example.org",
+      "subject": "Headache after first dose \u2014 drug name missing",
+      "body": "Pharmacist reporting severe headache after first dose. Patient adult, age not written. Product name missing on the form.",
+      "pdfRelativePaths": [
+        "pdfs/digital_icsr_03.pdf"
+      ]
+    },
+    {
+      "sender": "qc@example.wholesaler",
+      "subject": "Broken seal / brown tablets lot ZT-9B17",
+      "body": "Quality complaint only. Zentaril 10 mg lot ZT-9B17: broken tamper-evident seal and wrong color (brown) tablets. Photo of blister mentioned. No patient reaction.",
+      "pdfRelativePaths": [
+        "pdfs/digital_pqc_01.pdf"
+      ]
+    },
+    {
+      "sender": "mi.mailbox@example.org",
+      "subject": "Can Zentaril be crushed?",
+      "body": "Two questions: Can Zentaril be crushed into applesauce? Any renal adjustment at eGFR 40? No adverse event, no product defect.",
+      "pdfRelativePaths": [
+        "pdfs/digital_mi_01.pdf"
+      ]
+    },
+    {
+      "sender": "ward.nurse@example.nhs",
+      "subject": "Handwritten AE form scan",
+      "body": "Please find a photographed handwritten form. Fictional 54-year-old male, Helioxa, rash, overnight hospital stay. Reporter nurse, UK.",
+      "pdfRelativePaths": [
+        "pdfs/scanned_handwritten_01.pdf"
+      ]
+    },
+    {
+      "sender": "warehouse@example.com",
+      "subject": "Cracked vial photo form",
+      "body": "Scanned complaint: lot QK-220 cracked vial leaking. Not an adverse reaction.",
+      "pdfRelativePaths": [
+        "pdfs/scanned_handwritten_02.pdf"
+      ]
+    },
+    {
+      "sender": "lit.watch@example.org",
+      "subject": "Article: fictional DILI case",
+      "body": "Please screen attached made-up journal PDF for a patient case.",
+      "pdfRelativePaths": [
+        "pdfs/article_case_01.pdf"
+      ]
+    },
+    {
+      "sender": "lit.watch@example.org",
+      "subject": "Article with two fictional patients",
+      "body": "Literature PDF may contain two cases.",
+      "pdfRelativePaths": [
+        "pdfs/article_case_02.pdf"
+      ]
+    },
+    {
+      "sender": "lit.watch@example.org",
+      "subject": "Review article no patients",
+      "body": "Probably not a case.",
+      "pdfRelativePaths": [
+        "pdfs/article_case_03.pdf"
+      ]
+    },
+    {
+      "sender": "lit.watch@example.org",
+      "subject": "Pregnancy vignette",
+      "body": "Fictional pregnancy exposure article attached.",
+      "pdfRelativePaths": [
+        "pdfs/article_case_04.pdf"
+      ]
+    },
+    {
+      "sender": "lit.watch@example.org",
+      "subject": "Anaphylaxis case report",
+      "body": "Fictional anaphylaxis write-up.",
+      "pdfRelativePaths": [
+        "pdfs/article_case_05.pdf"
+      ]
+    },
+    {
+      "sender": "madrid.clinic@example.es",
+      "subject": "Informe de seguridad (ES)",
+      "body": "Adjunto un PDF en espanol sobre urticaria ficticia por Zentaril.",
+      "pdfRelativePaths": [
+        "pdfs/spanish_case_01.pdf"
+      ]
+    },
+    {
+      "sender": "paris.pharma@example.fr",
+      "subject": "Cas indesirable (FR)",
+      "body": "PDF francais: nausees fictives sous Helioxa.",
+      "pdfRelativePaths": [
+        "pdfs/french_case_01.pdf"
+      ]
+    },
+    {
+      "sender": "pqc.only@example.com",
+      "subject": "Counterfeit carton spotted",
+      "body": "We received a carton that looks counterfeit (misspelled logo) for Helioxa. Lot CF-0001. No patient used it.",
+      "pdfRelativePaths": []
+    },
+    {
+      "sender": "mi.only@example.com",
+      "subject": "Interaction question only",
+      "body": "Does Zentaril interact with fictional drug Relorix? How should a patient take it with food? No reaction occurred.",
+      "pdfRelativePaths": []
+    },
+    {
+      "sender": "mi.only2@example.com",
+      "subject": "Dosing in hepatic impairment?",
+      "body": "What is the recommended Helioxa dose in Child-Pugh B? Pure medical information request.",
+      "pdfRelativePaths": []
+    },
+    {
+      "sender": "news@example.pharmamarketing",
+      "subject": "Join our spring webinar + 20% off conference tickets",
+      "body": "Unsubscribe here. Marketing newsletter about a scientific conference. No patient, no product complaint.",
+      "pdfRelativePaths": []
+    },
+    {
+      "sender": "gp@example.clinic",
+      "subject": "Death \u2014 fictional ICSR",
+      "body": "Fictional 81-year-old male died in hospital after Zentaril. Reporter GP, Canada. Started 1 Feb, reaction GI bleed 8 Feb. Outcome death. This is synthetic.",
+      "pdfRelativePaths": []
+    },
+    {
+      "sender": "combo@example.org",
+      "subject": "Rash after using leaking inhaler",
+      "body": "Patient (fictional, 30F) used Helioxa from a leaking canister (damaged packaging, lot LK-77) and developed facial swelling. Both quality defect and adverse reaction.",
+      "pdfRelativePaths": []
+    }
+  ]
+}

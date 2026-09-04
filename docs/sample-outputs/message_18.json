@@ -1,0 +1,16 @@
+{
+  "message_id": 18,
+  "classifications": [
+    {
+      "category": "IRRELEVANT",
+      "confidence": 0.7,
+      "reason": "Heuristic: marketing/admin language"
+    }
+  ],
+  "fields": [],
+  "pdf_analyses": [],
+  "duration_ms": 0,
+  "model": "heuristic",
+  "used_gemini": false,
+  "_wall_ms": 0
+}
